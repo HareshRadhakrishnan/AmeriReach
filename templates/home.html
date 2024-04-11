@@ -1,0 +1,539 @@
+{% extends "base.html" %}
+
+{%block content%}
+
+
+  <main>
+    <article>
+
+      <!--
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <h2 class="h1 hero-title">Unlock Your Opportunities in the USA</h2>
+
+
+
+          <div class="btn-group">
+            <a href="#destination"><button class="btn btn-primary">Learn more</button></a>
+
+            <a href="{{url_for('schedule')}}"><button class="btn btn-secondary">Schedule Free Consultation </button></a>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+<!--      &lt;!&ndash;-->
+<!--        - #TOUR SEARCH-->
+<!--      &ndash;&gt;-->
+
+<!--      <section class="tour-search">-->
+<!--        <div class="container">-->
+
+<!--          <form action="" class="tour-search-form">-->
+
+<!--            <div class="input-wrapper">-->
+<!--              <label for="destination" class="input-label">Search Destination*</label>-->
+
+<!--              <input type="text" name="destination" id="destination" required placeholder="Enter Destination"-->
+<!--                class="input-field">-->
+<!--            </div>-->
+
+<!--            <div class="input-wrapper">-->
+<!--              <label for="people" class="input-label">Pax Number*</label>-->
+
+<!--              <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">-->
+<!--            </div>-->
+
+<!--            <div class="input-wrapper">-->
+<!--              <label for="checkin" class="input-label">Checkin Date**</label>-->
+
+<!--              <input type="date" name="checkin" id="checkin" required class="input-field">-->
+<!--            </div>-->
+
+<!--            <div class="input-wrapper">-->
+<!--              <label for="checkout" class="input-label">Checkout Date*</label>-->
+
+<!--              <input type="date" name="checkout" id="checkout" required class="input-field">-->
+<!--            </div>-->
+
+<!--            <button type="submit" class="btn btn-secondary">Inquire now</button>-->
+
+<!--          </form>-->
+
+<!--        </div>-->
+<!--      </section>-->
+
+
+
+
+
+      <!--
+        - #POPULAR
+      -->
+
+      <section class="popular" id="destination">
+        <div class="container">
+
+          <p class="section-subtitle">Discover Where You Can Go</p>
+
+          <h2 class="h2 section-title">Explore Popular Routs</h2>
+
+          <p class="section-text">
+            Discover the path to work and study in the USA with Transcend America. We provide assistance to individuals seeking job offers, visas, and educational admissions.
+          </p>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="{{url_for('static', filename='./assets/images/popular-1.jpg')}}" alt="work" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Work Opportunity</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Job Placement Assistance</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Transcend America provides assistance in securing job offers and visas for individuals looking to work in the USA.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="{{url_for('static', filename='./assets/images/popular-2.jpg')}}" alt="Study" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Study Opportunity</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Education Enrollment Assistance</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Transcend America assists individuals in obtaining admissions and visas for studying in the USA.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="{{url_for('static', filename='./assets/images/popular-3.jpg')}}" alt="custom" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Additional Opportunity</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Customized Services</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Transcend America offers customized services tailored to individual needs for working or studying in the USA.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+<!--          <button class="btn btn-primary">More destintion</button>-->
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #PACKAGE
+      -->
+
+      <section class="package" id="package">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Packeges</p>
+
+          <h2 class="h2 section-title">Choose Your Journey</h2>
+
+          <p class="section-text">
+            Embark on your dream journey with our handcrafted packages. Not sure where to start? Book a free consultation with us to tailor your perfect trip!
+          </p>
+
+          <ul class="package-list">
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="{{url_for('static', filename='./assets/images/packege-1.jpg')}}" alt="work visa" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Work Visa Package</h3>
+
+                  <p class="card-text">
+                   Includes assistance in securing job offers, visa application, and relocation support for individuals seeking employment in the USA.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="business"></ion-icon>
+
+                        <p class="text">Job Offer</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="document-attach"></ion-icon>
+
+                        <p class="text">Visa Processing</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="airplane"></ion-icon>
+
+                        <p class="text">Placement</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(25 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+<!--                  <p class="price">-->
+<!--                    $750-->
+<!--                    <span>/ per person</span>-->
+<!--                  </p>-->
+
+                    <a href="{{url_for('schedule')}}"><button class="btn btn-secondary">Schedule Consultation</button></a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="{{url_for('static', filename='./assets/images/packege-2.jpg')}}" alt="Study Overseas" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Study Abroad Package</h3>
+
+                  <p class="card-text">
+                    Includes assistance in university admissions, visa application, accommodation arrangements, and orientation for individuals interested in studying in the USA
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="book"></ion-icon>
+
+                        <p class="text">Admission</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="document-attach"></ion-icon>
+
+                        <p class="text">Visa Processing</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="airplane"></ion-icon>
+
+                        <p class="text">Placement</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(20 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $520
+                    <span>/ per person</span>
+                  </p>
+
+                  <a href="{{url_for('schedule')}}"><button class="btn btn-secondary">Schedule Consultation</button></a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="{{url_for('static', filename='./assets/images/packege-3.jpg')}}" alt="Premium Service" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Premium Assistance Package</h3>
+
+                  <p class="card-text">
+                    Includes personalized services tailored to individual needs, priority processing, and additional support throughout the entire process of working or studying in the USA.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">Plan</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="document-attach"></ion-icon>
+
+                        <p class="text">Visa Processing</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="airplane"></ion-icon>
+
+                        <p class="text">Migration</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(40 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $660
+                    <span>/ per person</span>
+                  </p>
+
+                  <a href="{{url_for('schedule')}}"><button class="btn btn-secondary">Schedule Consultation</button></a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+<!--          <button class="btn btn-primary">View All Packages</button>-->
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #GALLERY
+      -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle">Photo Gallery</p>
+
+          <h2 class="h2 section-title">Photo's From Travellers</h2>
+
+          <p class="section-text">
+            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
+            Sit ornare
+            mollitia tenetur, aptent.
+          </p>
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #CTA
+      -->
+
+      <section class="cta" id="contact">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitle">Get Started Today</p>
+
+            <h2 class="h2 section-title">Ready to Begin Your American Journey?</h2>
+
+            <p class="section-text">
+              Explore the world through the lens of our travelers. Ready to start your journey? Schedule a free consultation now!
+            </p>
+          </div>
+
+          <a href="https://wa.me/+12057237407?text=Hi%20there!%20I'm%20interested%20in%20learning%20more%20about%20your%20services.%20Can%20you%20provide%20some%20information%20please" target=”_blank” class="contact-link"><button class="btn btn-secondary">Contact Us !</button></a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+{% endblock %}
